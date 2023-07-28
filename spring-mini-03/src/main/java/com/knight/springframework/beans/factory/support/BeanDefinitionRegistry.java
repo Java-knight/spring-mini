@@ -1,4 +1,4 @@
-package com.knight.springframe.beans.factory.support;
+package com.knight.springframework.beans.factory.support;
 
 import com.knight.springframework.beans.factory.config.BeanDefinition;
 

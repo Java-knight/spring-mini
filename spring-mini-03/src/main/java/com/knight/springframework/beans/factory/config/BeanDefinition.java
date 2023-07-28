@@ -1,4 +1,4 @@
-package com.knight.springframe.beans.factory.config;
+package com.knight.springframework.beans.factory.config;
 
 /**
  * bean 定义

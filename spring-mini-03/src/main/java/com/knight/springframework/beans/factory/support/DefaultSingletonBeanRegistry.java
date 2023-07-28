@@ -1,4 +1,4 @@
-package com.knight.springframe.beans.factory.support;
+package com.knight.springframework.beans.factory.support;
 
 import com.knight.springframework.beans.factory.config.SingletonBeanRegistry;
 
@@ -21,7 +21,7 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
         return singletonObjectMap.get(beanName);
     }
 
-    protected void addSingleton(String beanName, Object singletonObject) {
+    protected void registerSingleton(String beanName, Object singletonObject) {
         singletonObjectMap.put(beanName, singletonObject);
     }
 }

@@ -4,25 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-01 1'">
-      <change afterPath="$PROJECT_DIR$/spring-mini-02/pom.xml" afterDir="false" />
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-03 01'">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjdk_jol_jol_cli_0_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjdk_jol_jol_core_0_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring-mini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-mini.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-01/spring-mini-01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-02/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-02/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-02/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-02/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/BeansException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/BeansException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/config/SingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/support/BeanDefinitionRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/support/BeanDefinitionRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/support/DefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframe/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +60,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-02/src/test/java/com/knight/springframework",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-03/src/test/java/com/knight/springframework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,10 +75,28 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-03\src\test\java\com\knight\springframework" />
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-03\src\main\java\com\knight\springframe" />
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-02\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-02\src\main\java\com\knight" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_BeanFactory (1)">
+  <component name="RunManager" selected="JUnit.ApiTest">
+    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_BeanFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-mini-02" />
       <extension name="coverage">
@@ -114,8 +129,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTest.test_cglib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_cglib" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest" />
+        <item itemvalue="JUnit.ApiTest.test_cglib" />
         <item itemvalue="JUnit.ApiTest.test_BeanFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_BeanFactory" />
       </list>
@@ -131,7 +164,7 @@
       <updated>1690046737564</updated>
       <workItem from="1690046739786" duration="1287000" />
       <workItem from="1690551956790" duration="1740000" />
-      <workItem from="1690553709583" duration="3024000" />
+      <workItem from="1690553709583" duration="6238000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -140,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690047792027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="'spring-mini-02'">
+      <created>1690559789660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690559789660</updated>
+    </task>
+    <task id="LOCAL-00003" summary="'spring-mini-03 01'">
+      <created>1690559926943</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690559926943</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +206,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="'spring-mini-01 1'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-01 1'" />
+    <MESSAGE value="'spring-mini-02'" />
+    <MESSAGE value="'spring-mini-03 01'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-03 01'" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/spring-mini-03/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>19</line>
+          <properties class="com.knight.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory" method="createBean">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

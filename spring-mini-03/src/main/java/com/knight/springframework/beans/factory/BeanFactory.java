@@ -1,4 +1,4 @@
-package com.knight.springframe.beans.factory;
+package com.knight.springframework.beans.factory;
 
 import com.knight.springframework.beans.BeansException;
 
@@ -17,4 +17,13 @@ public interface BeanFactory {
      * @throws BeansException
      */
     Object getBean(String name) throws BeansException;
+
+    /**
+     * 获取 bean 对象, 含有参数[含参构造函数]
+     * @param name
+     * @param args
+     * @return
+     * @throws BeansException
+     */
+    Object getBean(String name, Object... args) throws BeansException;
 }

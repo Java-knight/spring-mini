@@ -1,4 +1,4 @@
-package com.knight.springframe.beans;
+package com.knight.springframework.beans;
 
 /**
  * bean 异常类
