@@ -1,5 +1,8 @@
 package com.knight.springframework.beans.factory.config;
 
+import com.knight.springframework.beans.PropertyValue;
+import com.knight.springframework.beans.PropertyValues;
+
 /**
  * bean 定义
  * @desc
@@ -9,10 +12,19 @@ package com.knight.springframework.beans.factory.config;
 @SuppressWarnings({"rawtypes"})
 public class BeanDefinition {
 
+    // bean对象类元信息
     private Class beanClass;
 
+    // bean 属性值集合
+    private PropertyValues propertyValues;
+
     public BeanDefinition(Class beanClass) {
+        this(beanClass, null);
+    }
+
+    public BeanDefinition(Class beanClass, PropertyValues propertyValues) {
         this.beanClass = beanClass;
+        this.propertyValues = propertyValues != null ? propertyValues : new PropertyValues();
     }
 
     public Class getBeanClass() {
@@ -21,5 +33,13 @@ public class BeanDefinition {
 
     public void setBeanClass(Class beanClass) {
         this.beanClass = beanClass;
+    }
+
+    public PropertyValues getPropertyValues() {
+        return propertyValues;
+    }
+
+    public void setPropertyValues(PropertyValues propertyValues) {
+        this.propertyValues = propertyValues;
     }
 }
