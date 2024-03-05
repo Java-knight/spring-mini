@@ -23,6 +23,11 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         return doGetBean(name, args);
     }
 
+    @Override
+    public <T> T getBean(String name, Class<T> requiredType) throws BeansException {
+        return (T) getBean(name);
+    }
+
     protected <T> T doGetBean(final String name, Object[] args) {
         // (1) 首先从 单例Bean缓存 中获取bean对象
         Object bean = getSingleton(name);

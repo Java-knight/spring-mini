@@ -10,7 +10,7 @@ import com.knight.springframework.beans.factory.config.BeanReference;
 import java.lang.reflect.Constructor;
 
 /**
- * {@link AbstractBeanFactory}抽象 bean 工厂的实现子类. createBean()发放的主要实现. 提供 bean的属性注入、初始化方法、自动装配、bean处理器
+ * {@link AbstractBeanFactory}抽象 bean 工厂的实现子类. createBean()方法的主要实现. 提供 bean的属性注入、初始化方法、自动装配、bean处理器
  * @desc
  * @author knight
  * @date 2023/7/28
@@ -32,7 +32,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
             throw new BeansException("Instantiation of bean failed", e);
         }
 
-        registerSingleton(beanName, bean);
+        addSingleton(beanName, bean);
         return bean;
     }
 
