@@ -21,7 +21,7 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableA
     }
 
     /**
-     * 获取 xml 资源位置(local\uri)
+     * 获取 xml 资源位置
      * @return
      */
     protected abstract String[] getConfigLocations();

@@ -1,8 +1,15 @@
 # 小型 Spring 框架
 
 ## 06 
-BeanFactoryPostProcessor: 允许自定义修改 BeanDefinition 属性信息(创建 Bean对象之前)
-BeanPostProcessor: 用于修改实例 Bean 对象的扩展点(初始化前后都提供了钩子函数)
+ * BeanFactoryPostProcessor: 允许自定义修改 BeanDefinition 属性信息(创建 Bean对象之前)
+
+ * BeanPostProcessor: 用于修改实例 Bean 对象的扩展点(初始化前后都提供了钩子函数)
+
+调用法方: 
+
+(1) BeanFactoryPostProcessor.postProcessBeanFactory(beanFactory)
+
+(2) BeanFactory.addBeanPostProcessor(beanPostProcessor)
 
 上下文刷新流程: ConfigurableApplicationContext#refresh: 
 > (1) 创建 BeanFactory, 并加载 BeanDefinition

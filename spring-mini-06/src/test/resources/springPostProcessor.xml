@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="userDao" class="com.knight.springframework.test.bean.UserDao"/>
+
+    <bean id="userService" class="com.knight.springframework.test.bean.UserService">
+        <property name="uid" value="10002"/>
+        <property name="company" value="Tencent"/>
+        <property name="location" value="shenzhen"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean class="com.knight.springframework.test.common.MyBeanPostProcessor"/>
+    <bean class="com.knight.springframework.test.common.MyBeanFactoryPostProcessor"/>
+
+</beans>
