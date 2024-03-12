@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-mini-06" />
         <module name="spring-mini-01" />
         <module name="spring-mini-02" />
         <module name="spring-mini-03" />
