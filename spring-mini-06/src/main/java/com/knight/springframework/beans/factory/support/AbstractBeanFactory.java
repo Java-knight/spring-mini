@@ -3,6 +3,11 @@ package com.knight.springframework.beans.factory.support;
 import com.knight.springframework.beans.BeansException;
 import com.knight.springframework.beans.factory.BeanFactory;
 import com.knight.springframework.beans.factory.config.BeanDefinition;
+import com.knight.springframework.beans.factory.config.BeanPostProcessor;
+import com.knight.springframework.beans.factory.config.ConfigurableBeanFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 抽象实现 {@link BeanFactory} 接口, 提供一个模板的 getBean 流程, 其子类只需要关注具体的子方法实现
@@ -11,7 +16,12 @@ import com.knight.springframework.beans.factory.config.BeanDefinition;
  * @author knight
  * @date 2023/7/28
  */
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
+
+    /**
+     * bean 对象处理器
+     */
+    private final List<BeanPostProcessor> beanPostProcessors = new ArrayList<>();
 
     @Override
     public Object getBean(String name) throws BeansException {
@@ -57,4 +67,14 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
      * @throws BeansException
      */
     protected abstract Object createBean(String beanName, BeanDefinition beanDefinition, Object[] args) throws BeansException;
+
+    @Override
+    public void addBeanPostProcessor(BeanPostProcessor beanPostProcessor) {
+        this.beanPostProcessors.remove(beanPostProcessor);
+        this.beanPostProcessors.add(beanPostProcessor);
+    }
+
+    public List<BeanPostProcessor> getBeanPostProcessors() {
+        return beanPostProcessors;
+    }
 }

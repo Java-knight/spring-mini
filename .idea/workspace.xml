@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-05 03'">
-      <change afterPath="$PROJECT_DIR$/spring-mini-06/pom.xml" afterDir="false" />
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-06 基于上次的代码'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/ListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/ListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/support/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/support/DefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/ConfigurableListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/ConfigurableListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/ListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/ListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/config/AutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/config/AutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/DefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-06\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-05\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-05\src\main\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-04\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-04\src\main\java\com\knight\springframework" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-03\src\test\java\com\knight\springframework" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ApiTest.test_url">
@@ -185,7 +197,7 @@
       <workItem from="1709564406700" duration="694000" />
       <workItem from="1709565199674" duration="46000" />
       <workItem from="1709565550654" duration="8153000" />
-      <workItem from="1710257443332" duration="385000" />
+      <workItem from="1710257443332" duration="7406000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -250,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709655020962</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="'spring-mini-06 基于上次的代码'">
+      <created>1710257868811</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710257868811</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +296,8 @@
     <MESSAGE value="'spring-mini-05 01'" />
     <MESSAGE value="'spring-mini-05 02'" />
     <MESSAGE value="'spring-mini-05 03'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-05 03'" />
+    <MESSAGE value="'spring-mini-06 基于上次的代码'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-06 基于上次的代码'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,6 +310,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/spring-mini-06/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java</url>
+          <line>60</line>
+          <properties class="com.knight.springframework.beans.factory.xml.XmlBeanDefinitionReader" method="loadBeanDefinitions">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/spring-mini-05/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java</url>
+          <line>53</line>
+          <properties class="com.knight.springframework.beans.factory.xml.XmlBeanDefinitionReader" method="loadBeanDefinitions">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
