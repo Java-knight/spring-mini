@@ -1,9 +1,12 @@
 package com.knight.springframework.beans.factory.support;
 
+import com.knight.springframework.beans.BeansException;
+import com.knight.springframework.beans.factory.DisposableBean;
 import com.knight.springframework.beans.factory.config.SingletonBeanRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 默认单例 bean 注册器[对象信息]
@@ -14,7 +17,10 @@ import java.util.Map;
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 
     // 单例 bean 注册器
-    private final Map<String, Object> singletonObjectMap = new HashMap<>();
+    private Map<String, Object> singletonObjectMap = new HashMap<>();
+
+    // 销毁 bean 注册器
+    private final Map<String, DisposableBean> disposableBeanMap = new HashMap<>();
 
     @Override
     public Object getSingleton(String beanName) {
@@ -23,5 +29,25 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 
     protected void addSingleton(String beanName, Object singletonObject) {
         singletonObjectMap.put(beanName, singletonObject);
+    }
+
+    public void registerDisposableBean(String beanName, DisposableBean bean) {
+        disposableBeanMap.put(beanName, bean);
+    }
+
+    @Override
+    public void destroySingletons() {
+        Set<String> keySet = this.disposableBeanMap.keySet();
+        Object[] disposableBeanNames = keySet.toArray();
+
+        for (int i = disposableBeanNames.length - 1; i >= 0; i--) {
+            Object beanName = disposableBeanNames[i];
+            DisposableBean disposableBean = disposableBeanMap.remove(beanName);
+            try {
+                disposableBean.destroy();
+            } catch (Exception e) {
+                throw new BeansException("Destroy method on bean with name '" + beanName + "' throw an exception", e);
+            }
+        }
     }
 }

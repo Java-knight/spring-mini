@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-06 测试代码'">
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-07 上次代码'">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/config/SingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/context/ConfigurableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +36,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/ClassNotFoundException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Exception.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Throwable.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/reflect/Method.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/util/List.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,49 +60,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/work/javaWork/spring-mini/spring-mini-06/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build.android&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-07/src/test/java/com/knight/springframework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build.android"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-07\src\test\java\com\knight\springframework" />
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-07\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-06\src\test\resources" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-06\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-06\src\main\java\com\knight" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-05\src\test\java\com\knight\springframework" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-05\src\main\java\com\knight\springframework" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_BeanFactory">
-    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-05" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.knight.springframework.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
-      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ApiTest.test_xml (2)">
     <configuration name="ApiTest.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-mini-06" />
       <extension name="coverage">
@@ -99,6 +99,22 @@
       <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
       <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
       <option name="METHOD_NAME" value="test_BeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_hook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-07" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_hook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,8 +152,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_xml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-05" />
+    <configuration name="ApiTest.test_xml (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-07" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.knight.springframework.test.*" />
@@ -154,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_xml (2)" />
+        <item itemvalue="JUnit.ApiTest.test_hook" />
         <item itemvalue="JUnit.ApiTest.test_BeanFactory" />
         <item itemvalue="JUnit.ApiTest.test_xml (1)" />
         <item itemvalue="JUnit.ApiTest.test_url" />
-        <item itemvalue="JUnit.ApiTest" />
-        <item itemvalue="JUnit.ApiTest.test_xml" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +201,9 @@
       <workItem from="1709565550654" duration="8153000" />
       <workItem from="1710257443332" duration="10221000" />
       <workItem from="1710268119760" duration="27000" />
+      <workItem from="1710345144196" duration="855000" />
+      <workItem from="1710427444699" duration="865000" />
+      <workItem from="1710428580362" duration="4925000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -270,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710268066883</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="'spring-mini-07 上次代码'">
+      <created>1710345323954</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710345323954</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,20 +326,21 @@
     <MESSAGE value="'spring-mini-06 基于上次的代码'" />
     <MESSAGE value="'spring-mini-06 主要功能应用上下文 refresh'" />
     <MESSAGE value="'spring-mini-06 测试代码'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-06 测试代码'" />
+    <MESSAGE value="'spring-mini-07 上次代码'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-07 上次代码'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-mini-06/src/test/java/com/knight/springframework/test/ApiTest.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-mini-06/src/test/java/com/knight/springframework/test/common/MyBeanPostProcessor.java</url>
           <line>14</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
