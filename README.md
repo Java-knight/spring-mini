@@ -31,3 +31,27 @@
 ### 设计原则
 可以参考: ClassPathXmlApplicationContext, 顶层接口定义了一个 refresh 方法, 
 整个流程都抽象出来给抽象类, 最后只需要一个 configLocations, 构造最终子类, 调用顶层接口 refresh(公共流程+configLocations参数).
+
+## 07 
+本节主要实现 Bean对象从初始化钩子函数和销毁钩子函数
+
+两个核心接口: 
+* InitializingBean: 在 bean 属性赋值完之后调用
+* DisposableBean: 在 bean 销毁之前调用, 类似于 Object#finalize()
+
+实现的方式有两种:
+
+> (1) 是通过实现者两个接口的方法 
+>
+> (2) xml文件中配置, 并指定调用的方法(注解本质原理也是这个, 只是简化了xml配置)
+
+它们两个的实现是完全不同的:
+
+(1) init-method是通过 `createBean` 时, 将其加在 `initializeBean` 方法中, bean 初始化前置处理器和后置处理器之间调用;
+
+(2) destroy-method 是通过钩子函数实现的, **注册**在 `createBean` 时, 创建好 bean, 在 bean 被加入单例注册表之前, 在注册一个 destroy的钩子函数; 
+**调用** 实在 context 执行 `close` 方法时候, 会调用 `destroySingletons` 方法, 执行单例注册表中的销毁方法.
+
+总结: 两个方法实现不同的原因, bean 对象创建是自发性的, 容器是为了管理这个 Bean 对象的生命周期, 在创建好对象后执行 init-method 方法; 
+销毁 Bean对象只能是通过钩子函数的方式, 在对象创建完成后(对于容器创建Bean没有结束), 去注册一个钩子函数, 当对象要销毁时(容器销毁对象), 
+去注册表中获取到钩子函数进行调用; 用途: 销毁这里可以做一些该类对象需要做的销毁前的操作, 比如链接资源的释放...
