@@ -5,6 +5,7 @@ import com.knight.springframework.beans.factory.BeanFactory;
 import com.knight.springframework.beans.factory.config.BeanDefinition;
 import com.knight.springframework.beans.factory.config.BeanPostProcessor;
 import com.knight.springframework.beans.factory.config.ConfigurableBeanFactory;
+import com.knight.springframework.util.ClassUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,11 @@ import java.util.List;
  * @date 2023/7/28
  */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
+
+    /**
+     * 当前 beanFactory 的类加载器
+     */
+    private ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();
 
     /**
      * bean 对象处理器
@@ -76,5 +82,9 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
 
     public List<BeanPostProcessor> getBeanPostProcessors() {
         return beanPostProcessors;
+    }
+
+    public ClassLoader getBeanClassLoader() {
+        return beanClassLoader;
     }
 }
