@@ -11,6 +11,12 @@ import com.knight.springframework.beans.PropertyValues;
 @SuppressWarnings({"rawtypes"})
 public class BeanDefinition {
 
+    // beanDefinition的范围——单例
+    public String SCOPE_SINGLETON = ConfigurableBeanFactory.SCOPE_SINGLETON;
+
+    // beanDefinition的范围——原型
+    public String SCOPE_PROTOTYPE = ConfigurableBeanFactory.SCOPE_PROTOTYPE;
+
     // bean对象类元信息
     private Class beanClass;
 
@@ -22,6 +28,12 @@ public class BeanDefinition {
 
     // bean 销毁前调用(DisposableBean)[注解/xml配置使用]
     private String destroyMethodName;
+
+    private String scope = SCOPE_SINGLETON;  // BeanDefinition 默认是单例模式
+
+    private boolean singleton = true;
+
+    private boolean prototype = false;
 
     public BeanDefinition(Class beanClass) {
         this(beanClass, null);
@@ -62,5 +74,15 @@ public class BeanDefinition {
 
     public void setDestroyMethodName(String destroyMethodName) {
         this.destroyMethodName = destroyMethodName;
+    }
+
+    public void setScope(String scope) {
+        this.scope = scope;
+        this.singleton = SCOPE_SINGLETON.equals(scope);
+        this.prototype = SCOPE_PROTOTYPE.equals(scope);
+    }
+
+    public boolean isSingleton() {
+        return singleton;
     }
 }

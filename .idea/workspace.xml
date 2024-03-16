@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-08 无感创建容器对象-测试代码'" />
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-09 对象作用域和FactoryBean-基本代码'">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-09/src/main/java/com/knight/springframework/beans/factory/xml/XmlBeanDefinitionReader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-08/src/test/resources",
+    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-09/src/main/java/com/knight",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,11 +78,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-08\src\test\resources" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-08\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-08\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-07\src\test\java\com\knight\springframework" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-07\src\main\java\com\knight" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ApiTest.test_xml">
@@ -191,7 +202,7 @@
       <workItem from="1710345144196" duration="855000" />
       <workItem from="1710427444699" duration="865000" />
       <workItem from="1710428580362" duration="5353000" />
-      <workItem from="1710590068137" duration="3041000" />
+      <workItem from="1710590068137" duration="7749000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -326,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710593087310</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="'spring-mini-08 感知容器对象-readme'">
+      <created>1710593664909</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710593664909</updated>
+    </task>
+    <task id="LOCAL-00021" summary="'spring-mini-09 对象作用域和FactoryBean-基本代码'">
+      <created>1710593713024</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1710593713024</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +386,9 @@
     <MESSAGE value="'spring-mini-08 无感创建容器对象'" />
     <MESSAGE value="'spring-mini-08 无感创建容器对象-代码实现'" />
     <MESSAGE value="'spring-mini-08 无感创建容器对象-测试代码'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-08 无感创建容器对象-测试代码'" />
+    <MESSAGE value="'spring-mini-08 感知容器对象-readme'" />
+    <MESSAGE value="'spring-mini-09 对象作用域和FactoryBean-基本代码'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-09 对象作用域和FactoryBean-基本代码'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
