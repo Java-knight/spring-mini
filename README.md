@@ -58,8 +58,12 @@
 
 ## 08
 本节主要实现 BeanFactory、Bean、BeanClassLoader、ApplicationContext 的标记
-Aware: 标记接口
+* Aware: 标记接口
+
 作用: 标记 Bean对象, 可以给 Bean 对象重命名(指定BeanName)
+* BeanFactoryAware: 标记bean工厂
+
+用途: 事件机制使用到了
 
 ## 09 
 本节主要实现 对象作用域和FactoryBean
@@ -71,3 +75,6 @@ FactoryBean: 这是一个工厂Bean, 本质上还是一个Bean对象, 给外部�
 ### 重点类
 FactoryBeanRegistrySupport: FactoryBean 的注册支持. 
 提供了一个Cache(Map)保存单例模式下FactoryBean创建的对象, 并整合了 DefaultSingletonBeanRegistry(单例管理者)
+
+## 特殊
+cglib 生成的类: className 中会包含 "$$"
