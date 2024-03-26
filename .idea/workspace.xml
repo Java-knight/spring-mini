@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-10 容器事件和事件监听器-事件机制实现'">
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-10 容器事件和事件监听器-测试代码'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +199,7 @@
       <workItem from="1710590068137" duration="9951000" />
       <workItem from="1710777527929" duration="189000" />
       <workItem from="1711290604168" duration="4647000" />
-      <workItem from="1711467372024" duration="1940000" />
+      <workItem from="1711467372024" duration="3154000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -377,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711468526175</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="'spring-mini-10 容器事件和事件监听器-测试代码'">
+      <created>1711469448535</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1711469448535</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +425,8 @@
     <MESSAGE value="'spring-mini-09 对象作用域和FactoryBean-测试代码'" />
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-基本代码'" />
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-事件机制实现'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-10 容器事件和事件监听器-事件机制实现'" />
+    <MESSAGE value="'spring-mini-10 容器事件和事件监听器-测试代码'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-10 容器事件和事件监听器-测试代码'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

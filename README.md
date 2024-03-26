@@ -72,6 +72,19 @@
 FactoryBean: 这是一个工厂Bean, 本质上还是一个Bean对象, 给外部暴露提供创建对象的接口.
 场景: AOP 代理对象的创建、Web工厂
 
+## 10
+本节主要实现 事件机制
+
+设计模式: 发布订阅模型
+
+* 场景: 在设计业务流程时, 我们可以使用事件机制实现业务的解耦, 代码的封装. 
+* 功能: 还提供了注解 @EventListener 将其代码段标注为监听器, 实现接受事件的handler处理逻辑, 并提供了condition条件方法, 过滤相同事件不同的业务状态(业务但支付完成触发事件, 对于创建这个handler是不会执行的)
+* 比如: 业务处理完需要发消息通知下游, 发消息的逻辑就可以做成一种事件通知
+
+### uml图
+./uml/事件机制.png
+
+
 ### 重点类
 FactoryBeanRegistrySupport: FactoryBean 的注册支持. 
 提供了一个Cache(Map)保存单例模式下FactoryBean创建的对象, 并整合了 DefaultSingletonBeanRegistry(单例管理者)

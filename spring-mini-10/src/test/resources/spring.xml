@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <!--容器事件-->
+    <bean class="com.knight.springframework.test.event.ContextClosedEventListener"/>
+    <bean class="com.knight.springframework.test.event.ContextRefreshEventListener"/>
+    <!--业务自定义事件-->
+    <bean class="com.knight.springframework.test.event.CustomEventListener"/>
+
+
+</beans>
