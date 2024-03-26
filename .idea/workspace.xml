@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-10 容器事件和事件监听器-基本代码'">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-10 容器事件和事件监听器-事件机制实现'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/beans/factory/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/beans/factory/config/SingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/ApplicationContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/util/ClassUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/util/ClassUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-10/src/main/java/com/knight/springframework/context/support/ClassPathXmlApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,34 +53,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/work/javaWork/spring-mini/spring-mini-10/src/main/java/com/knight&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build.android&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-10/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build.android"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\resources" />
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\test\resources" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\test\java\com\knight\springframework" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\main\java\com\knight" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-08\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_factory_bean">
+  <component name="RunManager" selected="JUnit.ApiTest.test_event">
+    <configuration name="ApiTest.test_event" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_event" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_factory_bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-mini-09" />
       <extension name="coverage">
@@ -99,22 +108,6 @@
       <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
       <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
       <option name="METHOD_NAME" value="test_factory_bean" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_hook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-07" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.knight.springframework.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
-      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_hook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_event" />
         <item itemvalue="JUnit.ApiTest.test_factory_bean" />
         <item itemvalue="JUnit.ApiTest.test_xml (3)" />
         <item itemvalue="JUnit.ApiTest.test_xml" />
         <item itemvalue="JUnit.ApiTest.test_xml (2)" />
-        <item itemvalue="JUnit.ApiTest.test_hook" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +200,7 @@
       <workItem from="1710590068137" duration="9951000" />
       <workItem from="1710777527929" duration="189000" />
       <workItem from="1711290604168" duration="4647000" />
-      <workItem from="1711467372024" duration="632000" />
+      <workItem from="1711467372024" duration="1940000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -377,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710777704261</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="'spring-mini-10 容器事件和事件监听器-事件机制实现'">
+      <created>1711468526175</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1711468526175</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +418,8 @@
     <MESSAGE value="'spring-mini-09 对象作用域和FactoryBean-代码实现 &amp; readme'" />
     <MESSAGE value="'spring-mini-09 对象作用域和FactoryBean-测试代码'" />
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-基本代码'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-10 容器事件和事件监听器-基本代码'" />
+    <MESSAGE value="'spring-mini-10 容器事件和事件监听器-事件机制实现'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-10 容器事件和事件监听器-事件机制实现'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

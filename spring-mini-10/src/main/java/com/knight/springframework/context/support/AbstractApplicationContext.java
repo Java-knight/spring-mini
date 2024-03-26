@@ -4,6 +4,7 @@ import com.knight.springframework.beans.BeansException;
 import com.knight.springframework.beans.factory.ConfigurableListableBeanFactory;
 import com.knight.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import com.knight.springframework.beans.factory.config.BeanPostProcessor;
+import com.knight.springframework.context.ApplicationEvent;
 import com.knight.springframework.context.ApplicationListener;
 import com.knight.springframework.context.ConfigurableApplicationContext;
 import com.knight.springframework.context.event.ApplicationEventMulticaster;
@@ -124,6 +125,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
      */
     private void finishRefresh() {
         publishEvent(new ContextRefreshedEvent(this));
+    }
+
+    @Override
+    public void publishEvent(ApplicationEvent event) {
+        applicationEventMulticaster.multicastEvent(event);
     }
 
     @Override
