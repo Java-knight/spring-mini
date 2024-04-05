@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-10 容器事件和事件监听器-测试代码'">
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-11 基于JDK、Cglib实现AOP切面'">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/org/aopalliance/intercept/MethodInterceptor.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar!/org/aspectj/weaver/tools/PointcutPrimitive.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/ClassNotFoundException.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Exception.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
@@ -52,31 +57,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-10/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build.android"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/work/javaWork/spring-mini&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build.android&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-11\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\resources" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\test\resources" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\test\java\com\knight\springframework" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ApiTest.test_event">
@@ -199,7 +204,12 @@
       <workItem from="1710590068137" duration="9951000" />
       <workItem from="1710777527929" duration="189000" />
       <workItem from="1711290604168" duration="4647000" />
-      <workItem from="1711467372024" duration="3154000" />
+      <workItem from="1711467372024" duration="3487000" />
+      <workItem from="1712151484174" duration="2587000" />
+      <workItem from="1712330139000" duration="1749000" />
+      <workItem from="1712331911798" duration="975000" />
+      <workItem from="1712332893728" duration="301000" />
+      <workItem from="1712333219204" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -383,7 +393,28 @@
       <option name="project" value="LOCAL" />
       <updated>1711469448535</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="'spring-mini-10 容器事件和事件监听器-readme'">
+      <created>1711470685927</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1711470685927</updated>
+    </task>
+    <task id="LOCAL-00028" summary="'spring-mini-10 容器事件和事件监听器-readme'">
+      <created>1711470918588</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1711470918588</updated>
+    </task>
+    <task id="LOCAL-00029" summary="'spring-mini-11 基于JDK、Cglib实现AOP切面'">
+      <created>1712152751576</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712152751576</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,8 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="'spring-mini-01 1'" />
-    <MESSAGE value="'spring-mini-02'" />
     <MESSAGE value="'spring-mini-03 01'" />
     <MESSAGE value="'spring-mini-03'" />
     <MESSAGE value="'spring-mini-04 01'" />
@@ -426,7 +455,9 @@
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-基本代码'" />
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-事件机制实现'" />
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-测试代码'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-10 容器事件和事件监听器-测试代码'" />
+    <MESSAGE value="'spring-mini-10 容器事件和事件监听器-readme'" />
+    <MESSAGE value="'spring-mini-11 基于JDK、Cglib实现AOP切面'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-11 基于JDK、Cglib实现AOP切面'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
