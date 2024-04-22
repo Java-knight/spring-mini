@@ -1,6 +1,7 @@
 package com.knight.springframework.aop.framewok;
 
 import com.knight.springframework.aop.AdvisedSupport;
+import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
@@ -25,7 +26,11 @@ public class Cglib2AopProxy implements AopProxy {
 
     @Override
     public Object getProxy() {
-        return null;
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(advised.getTargetSource().getTarget().getClass());  // 对象的类型
+        enhancer.setInterfaces(advised.getTargetSource().getTargetClass());  // 目标类型, 泛型真是类型
+        enhancer.setCallback(new DynamicAdvisedInterceptor(advised));  // 回调函数
+        return enhancer.create();
     }
 
     /**
@@ -41,7 +46,7 @@ public class Cglib2AopProxy implements AopProxy {
 
         @Override
         public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-            CglibMethodInvocation methodInvocation = new CglibMethodInvocation(advised.getTargetSource(), method, objects, methodProxy);
+            CglibMethodInvocation methodInvocation = new CglibMethodInvocation(advised.getTargetSource().getTarget(), method, objects, methodProxy);
             if (advised.getMethodMatcher().matches(method, advised.getTargetSource().getTarget().getClass())) {  // 方法匹配器匹配到了
                 return advised.getMethodInterceptor().invoke(methodInvocation);
             }
