@@ -1,8 +1,8 @@
-package com.knight.springframework.aop.framewok.autoproxy;
+package com.knight.springframework.aop.framework.autoproxy;
 
 import com.knight.springframework.aop.*;
 import com.knight.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;
-import com.knight.springframework.aop.framewok.ProxyFactory;
+import com.knight.springframework.aop.framework.ProxyFactory;
 import com.knight.springframework.beans.BeansException;
 import com.knight.springframework.beans.factory.BeanFactory;
 import com.knight.springframework.beans.factory.BeanFactoryAware;
@@ -76,7 +76,7 @@ public class DefaultAdvisorAutoProxyCreator implements InstantiationAwareBeanPos
                 e.printStackTrace();
             }
 
-            // 设置通知管理器
+            // 设置通知管理器[组装代理信息]
             advisedSupport.setTargetSource(targetSource);
             advisedSupport.setMethodInterceptor((MethodInterceptor) advisor.getAdvice());
             advisedSupport.setMethodMatcher(advisor.getPointcut().getMethodMatcher());

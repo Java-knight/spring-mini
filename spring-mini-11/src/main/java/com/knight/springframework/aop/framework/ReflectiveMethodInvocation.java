@@ -1,4 +1,4 @@
-package com.knight.springframework.aop.framewok;
+package com.knight.springframework.aop.framework;
 
 import org.aopalliance.intercept.MethodInvocation;
 

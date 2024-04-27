@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-12 把AOP融入Bean的生命周期'">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-12 把AOP融入Bean的生命周期-基本代码实现'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/AopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/AopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/Cglib2AopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/JdkDynamicAopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/JdkDynamicAopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/ReflectiveMethodInvocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/ReflectiveMethodInvocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-11/src/test/java/com/knight/springframework/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/src/test/java/com/knight/springframework/test/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/AdvisedSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/AdvisedSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcutAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcutAdvisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/AopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/AopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/Cglib2AopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/JdkDynamicAopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/JdkDynamicAopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/ProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/ReflectiveMethodInvocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/ReflectiveMethodInvocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/adapter/MethodBeforeAdviceInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framewok/autoproxy/DefaultAdvisorAutoProxyCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/framework/autoproxy/DefaultAdvisorAutoProxyCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,36 +68,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/work/javaWork/spring-mini/spring-mini-12/src/main/java/com/knight&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build.android&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/work/javaWork/spring-mini/spring-mini-12/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build.android"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-12\src\test\resources" />
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-12\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-12\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-11\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-11\src\main\java\com\knight" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\resources" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\java\com\knight\springframework" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_proxy_method">
-    <configuration name="ApiTest.test_aop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-11" />
+  <component name="RunManager" selected="JUnit.ApiTest">
+    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_aop (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-12" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.knight.springframework.test.*" />
@@ -116,22 +138,6 @@
       <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
       <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
       <option name="METHOD_NAME" value="test_dynamic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_event" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.knight.springframework.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
-      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_event" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest" />
+        <item itemvalue="JUnit.ApiTest.test_aop (1)" />
         <item itemvalue="JUnit.ApiTest.test_proxy_method" />
         <item itemvalue="JUnit.ApiTest.test_proxy_class" />
         <item itemvalue="JUnit.ApiTest.test_dynamic" />
-        <item itemvalue="JUnit.ApiTest.test_aop" />
-        <item itemvalue="JUnit.ApiTest.test_event" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +222,7 @@
       <workItem from="1712333219204" duration="560000" />
       <workItem from="1713801164555" duration="3401000" />
       <workItem from="1714213449717" duration="7809000" />
-      <workItem from="1714221749362" duration="413000" />
+      <workItem from="1714221749362" duration="4441000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -442,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713804415408</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="'spring-mini-12 把AOP融入Bean的生命周期-基本代码实现'">
+      <created>1714222519227</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1714222519227</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="'spring-mini-04'" />
     <MESSAGE value="'spring-mini-05 01'" />
     <MESSAGE value="'spring-mini-05 02'" />
     <MESSAGE value="'spring-mini-05 03'" />
@@ -485,7 +497,8 @@
     <MESSAGE value="'spring-mini-11 基于JDK、Cglib实现AOP切面-代码实现'" />
     <MESSAGE value="'spring-mini-11 基于JDK、Cglib实现AOP切面-测试代码'" />
     <MESSAGE value="'spring-mini-12 把AOP融入Bean的生命周期'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-12 把AOP融入Bean的生命周期'" />
+    <MESSAGE value="'spring-mini-12 把AOP融入Bean的生命周期-基本代码实现'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-12 把AOP融入Bean的生命周期-基本代码实现'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,17 +514,17 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java</url>
+          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/Cglib2AopProxy.java</url>
           <line>71</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java</url>
+          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/Cglib2AopProxy.java</url>
           <line>28</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java</url>
+          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framework/Cglib2AopProxy.java</url>
           <line>48</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
@@ -519,6 +532,21 @@
           <url>file://$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcutAdvisor.java</url>
           <line>38</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-12/src/test/java/com/knight/springframework/test/ApiTest.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>205</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

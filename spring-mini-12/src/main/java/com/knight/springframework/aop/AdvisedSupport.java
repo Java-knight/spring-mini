@@ -12,7 +12,7 @@ import org.aopalliance.intercept.MethodInterceptor;
 public class AdvisedSupport {
 
     // ProxyConfig
-    private boolean proxyTargetClass = false;
+    private boolean proxyTargetClass = false;  // false/true JDK动态代理/CGLib动态代理
 
     // 被代理的目标对象
     private TargetSource targetSource;

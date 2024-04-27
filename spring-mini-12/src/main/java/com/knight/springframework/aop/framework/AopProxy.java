@@ -1,4 +1,4 @@
-package com.knight.springframework.aop.framewok;
+package com.knight.springframework.aop.framework;
 
 /**
  * AOP 代理的抽象

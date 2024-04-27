@@ -1,4 +1,4 @@
-package com.knight.springframework.aop.framewok;
+package com.knight.springframework.aop.framework;
 
 import com.knight.springframework.aop.AdvisedSupport;
 import org.aopalliance.intercept.MethodInterceptor;

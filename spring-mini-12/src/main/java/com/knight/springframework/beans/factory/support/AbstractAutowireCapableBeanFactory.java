@@ -52,8 +52,8 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
     protected Object resolveBeforeInstantiation(String beanName, BeanDefinition beanDefinition) {
         Object bean = applyBeanPostProcessorsBeforeInstantiation(beanDefinition.getBeanClass(), beanName);
-        if (null != bean) {
-            bean = applyBeanPostProcessorsAfterInitialization(beanDefinition.getBeanClass(), beanName);
+        if (null != bean) {  // 实例化后置处理
+            bean = applyBeanPostProcessorsAfterInitialization(bean, beanName);
         }
         return bean;
     }

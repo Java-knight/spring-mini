@@ -37,4 +37,8 @@ public class AspectJExpressionPointcutAdvisor implements PointcutAdvisor {
         }
         return pointcut;
     }
+
+    public void setAdvice(Advice advice) {
+        this.advice = advice;
+    }
 }
