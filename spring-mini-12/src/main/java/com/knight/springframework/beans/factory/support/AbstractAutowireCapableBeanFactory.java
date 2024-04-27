@@ -6,10 +6,7 @@ import com.knight.springframework.beans.BeansException;
 import com.knight.springframework.beans.PropertyValue;
 import com.knight.springframework.beans.PropertyValues;
 import com.knight.springframework.beans.factory.*;
-import com.knight.springframework.beans.factory.config.AutowireCapableBeanFactory;
-import com.knight.springframework.beans.factory.config.BeanDefinition;
-import com.knight.springframework.beans.factory.config.BeanPostProcessor;
-import com.knight.springframework.beans.factory.config.BeanReference;
+import com.knight.springframework.beans.factory.config.*;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -29,24 +26,51 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
     protected Object createBean(String beanName, BeanDefinition beanDefinition, Object[] args) throws BeansException {
         Object bean;
         try {
-            // (1) 创建 bean 实例
+            // (1) 判断是否返回代理 Bean 对象
+            bean = resolveBeforeInstantiation(beanName, beanDefinition);
+            if (null != bean) {
+                return bean;
+            }
+            // (2) 创建 bean 实例
             bean = createBeanInstance(beanDefinition, beanName, args);
-            // (2) 给 bean 填充属性
+            // (3) 给 bean 填充属性
             applyPropertyValues(beanName, bean, beanDefinition);
-            // (3) 执行 Bean 的初始化方法和 BeanPostProcessor 的前置和后置发放
+            // (4) 执行 Bean 的初始化方法和 BeanPostProcessor 的前置和后置发放
             bean = initializeBean(beanName, bean, beanDefinition);
         } catch (Exception e) {
             throw new BeansException("Instantiation of bean failed", e);
         }
-        // (4) 注册 bean对象 destroy方法
+        // (5) 注册 bean对象 destroy方法
         registerDisposableBeanIfNecessary(beanName, bean, beanDefinition);
 
-        // (5) 单例注册器中保存 bean 对象
+        // (6) 单例注册器中保存 bean 对象(单例/原型)
         if (beanDefinition.isSingleton()) {
             addSingleton(beanName, bean);
         }
         return bean;
     }
+
+    protected Object resolveBeforeInstantiation(String beanName, BeanDefinition beanDefinition) {
+        Object bean = applyBeanPostProcessorsBeforeInstantiation(beanDefinition.getBeanClass(), beanName);
+        if (null != bean) {
+            bean = applyBeanPostProcessorsAfterInitialization(beanDefinition.getBeanClass(), beanName);
+        }
+        return bean;
+    }
+
+    // 获取 bean 对象代理对象[是否实现 InstantiationAwareBeanPostProcessor接口]
+    protected Object applyBeanPostProcessorsBeforeInstantiation(Class<?> beanClass, String beanName) {
+        for (BeanPostProcessor beanPostProcessor : getBeanPostProcessors()) {
+            if (beanPostProcessor instanceof InstantiationAwareBeanPostProcessor) {
+                Object result = ((InstantiationAwareBeanPostProcessor) beanPostProcessor).postProcessBeforeInstantiation(beanClass, beanName);
+                if (null != result)
+                    return result;
+            }
+        }
+        return null;
+    }
+
+
 
     protected void registerDisposableBeanIfNecessary(String beanName, Object bean, BeanDefinition beanDefinition) {
         if (!beanDefinition.isSingleton())   // 非单例不需要重复注册

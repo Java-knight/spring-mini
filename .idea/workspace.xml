@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-11 基于JDK、Cglib实现AOP切面'">
+    <list default="true" id="3b304f56-d503-461d-a96d-3ec3144cf7d2" name="Changes" comment="'spring-mini-12 把AOP融入Bean的生命周期'">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mini-11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-11/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/AdvisedSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/AdvisedSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Exception.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/Throwable.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/reflect/AccessibleObject.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/lang/reflect/Method.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/util/EventObject.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../sdkdev/Java/jdk8/src.zip!/java/util/List.java" root0="SKIP_INSPECTION" />
@@ -63,7 +67,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/work/javaWork/spring-mini&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/work/javaWork/spring-mini/spring-mini-12/src/main/java/com/knight&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,14 +81,46 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-12\src\main\java\com\knight" />
+      <recent name="E:\work\javaWork\spring-mini\spring-mini-11\src\test\java\com\knight\springframework" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-11\src\main\java\com\knight" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\resources" />
       <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\test\java\com\knight\springframework" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-10\src\main\java\com\knight" />
-      <recent name="E:\work\javaWork\spring-mini\spring-mini-09\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_event">
+  <component name="RunManager" selected="JUnit.ApiTest.test_proxy_method">
+    <configuration name="ApiTest.test_aop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_aop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_dynamic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.knight.springframework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_dynamic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_event" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-mini-10" />
       <extension name="coverage">
@@ -101,8 +137,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_factory_bean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-09" />
+    <configuration name="ApiTest.test_proxy_class" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-11" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.knight.springframework.test.*" />
@@ -111,14 +147,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
       <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_factory_bean" />
+      <option name="METHOD_NAME" value="test_proxy_class" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_xml (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-07" />
+    <configuration name="ApiTest.test_proxy_method" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mini-11" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.knight.springframework.test.*" />
@@ -127,39 +163,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
       <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_xml" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_xml (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-09" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.knight.springframework.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
-      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_xml" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_xml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mini-08" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.knight.springframework.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.knight.springframework.test" />
-      <option name="MAIN_CLASS_NAME" value="com.knight.springframework.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_xml" />
+      <option name="METHOD_NAME" value="test_proxy_method" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_proxy_method" />
+        <item itemvalue="JUnit.ApiTest.test_proxy_class" />
+        <item itemvalue="JUnit.ApiTest.test_dynamic" />
+        <item itemvalue="JUnit.ApiTest.test_aop" />
         <item itemvalue="JUnit.ApiTest.test_event" />
-        <item itemvalue="JUnit.ApiTest.test_factory_bean" />
-        <item itemvalue="JUnit.ApiTest.test_xml (3)" />
-        <item itemvalue="JUnit.ApiTest.test_xml" />
-        <item itemvalue="JUnit.ApiTest.test_xml (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +213,10 @@
       <workItem from="1712330139000" duration="1749000" />
       <workItem from="1712331911798" duration="975000" />
       <workItem from="1712332893728" duration="301000" />
-      <workItem from="1712333219204" duration="347000" />
+      <workItem from="1712333219204" duration="560000" />
+      <workItem from="1713801164555" duration="3401000" />
+      <workItem from="1714213449717" duration="7809000" />
+      <workItem from="1714221749362" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="'spring-mini-01 1'">
       <created>1690047792026</created>
@@ -414,7 +421,28 @@
       <option name="project" value="LOCAL" />
       <updated>1712152751576</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="'spring-mini-11 基于JDK、Cglib实现AOP切面-代码实现'">
+      <created>1712333761356</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712333761356</updated>
+    </task>
+    <task id="LOCAL-00031" summary="'spring-mini-11 基于JDK、Cglib实现AOP切面-测试代码'">
+      <created>1713804161857</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713804161857</updated>
+    </task>
+    <task id="LOCAL-00032" summary="'spring-mini-12 把AOP融入Bean的生命周期'">
+      <created>1713804415408</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713804415408</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,9 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="'spring-mini-03 01'" />
-    <MESSAGE value="'spring-mini-03'" />
-    <MESSAGE value="'spring-mini-04 01'" />
     <MESSAGE value="'spring-mini-04'" />
     <MESSAGE value="'spring-mini-05 01'" />
     <MESSAGE value="'spring-mini-05 02'" />
@@ -457,7 +482,10 @@
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-测试代码'" />
     <MESSAGE value="'spring-mini-10 容器事件和事件监听器-readme'" />
     <MESSAGE value="'spring-mini-11 基于JDK、Cglib实现AOP切面'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-11 基于JDK、Cglib实现AOP切面'" />
+    <MESSAGE value="'spring-mini-11 基于JDK、Cglib实现AOP切面-代码实现'" />
+    <MESSAGE value="'spring-mini-11 基于JDK、Cglib实现AOP切面-测试代码'" />
+    <MESSAGE value="'spring-mini-12 把AOP融入Bean的生命周期'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'spring-mini-12 把AOP融入Bean的生命周期'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -471,6 +499,26 @@
           <url>file://$PROJECT_DIR$/spring-mini-07/src/main/java/com/knight/springframework/context/support/AbstractApplicationContext.java</url>
           <line>111</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-11/src/main/java/com/knight/springframework/aop/framewok/Cglib2AopProxy.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-mini-12/src/main/java/com/knight/springframework/aop/aspectj/AspectJExpressionPointcutAdvisor.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

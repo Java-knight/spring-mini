@@ -17,6 +17,7 @@
         <module name="spring-mini-10" />
         <module name="spring-mini-11" />
         <module name="spring-mini-01" />
+        <module name="spring-mini-12" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

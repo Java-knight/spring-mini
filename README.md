@@ -87,6 +87,33 @@ Q&A
 1. aop uml图? 每个类的介绍?
 2. jdk和cglib都是动态代理区别是啥? spring默认使用的哪个? 
 
+## 12
+本节主要实现将 AOP 结合到Bean对象的创建
+
+1.代理对象的创建com.knight.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor#postProcessBeforeInstantiation();
+
+代理对象的创建:
+> 1. 从 beanFactory 获取切点表达式类型的对象
+> 
+> 2. 遍历 切点表达式类型对象集合
+> 
+> (1) 判断此切点是否match住这个beanClass
+> 
+> (2) 如果匹配, 需要构建通知&通知器管理者 AdvisedSupport 去构建代理工厂 ProxyFactory
+> 
+> AdvisedSupport构建信息: 创建代理对象-TargetSource; 方法拦截器-MethodInterceptor; 方法匹配器-MethodMatcher; 是否需要代理对象-false
+
+
+Q&A
+
+Advice、Advisor、Advised都是什么接口?
+> Advice 是 Aspect 在特定切点采取的操作, 表示"通知"; 
+> 
+> Advisor 是 Spring AOP的基础接口, 表示"通知者";
+> 
+> Advised 是 AOP 代理工厂配置类接口. 提供了操作和管理 Advice 和 Advisor 的能力.
+
+
 ### uml图
 ![事件机制](./uml/事件机制.png)
 
