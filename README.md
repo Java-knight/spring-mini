@@ -92,6 +92,17 @@ Q&A
 
 1.代理对象的创建com.knight.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor#postProcessBeforeInstantiation();
 
+调用方: createBean的时候先去检查
+实现方: DefaultAdvisorAutoProxyCreator#postProcessBeforeInstantiation
+
+* 流程: 
+> (1) 从 BeanFactory 中获取切点表达式通知者AspectJExpressionPointcutAdvisor遍历;
+> 
+> (2) match 到切面;
+> 
+> (3) 进行代理信息的构建, 然后使用动态代理构建代理对象(使用JDK动态代理给目标对象创建代理对象)
+* 安全性: 只有类型是 通知-Advice/通知者-Advisor/切点-Pointcut 才可以进行代理
+
 代理对象的创建:
 > 1. 从 beanFactory 获取切点表达式类型的对象
 > 
